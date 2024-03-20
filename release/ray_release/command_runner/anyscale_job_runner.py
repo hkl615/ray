@@ -62,7 +62,7 @@ class AnyscaleJobRunner(JobRunner):
 
         self.last_command_scd_id = None
         self.path_in_bucket = join_cloud_storage_paths(
-            "working_dirs",
+            "new_working_dirs",
             self.cluster_manager.test.get_name().replace(" ", "_"),
             generate_tmp_cloud_storage_path(),
         )
